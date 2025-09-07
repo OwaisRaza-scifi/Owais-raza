@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/png" href="favicon.png">
+  <title>My work</title>
+  <style>
+    html,
+    body {
+      background-color: black;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+      .loader {
+        border: 0.3vh solid black;
+        /* relative size */
+        border-top: 0.3vh solid aqua;
+        border-radius: 50%;
+        width: 6vh;
+        /* responsive */
+        height: 6vh;
+        /* responsive */
+        animation: spin 1s linear infinite;
+        box-shadow: 0 0 2vh aqua;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: 0 0 5vh rgb(24, 138, 148);
+        color: aqua;
+        text-transform: uppercase;
+        font-size: 3vw;
+        /* scales with screen */
+        margin-top: 2vh;
+      }
+
+      a {
+        text-decoration: none;
+        background-color: aqua;
+        color: rgb(143, 65, 196);
+        font-family: cursive;
+        padding: 5px;
+        width: 130px;
+        font-size: 19px;
+        border-radius: 99px;
+        box-shadow: 0 0 20px aqua;
+        transition: ease 0.3s;
+      }
+
+      a:hover {
+        color: aqua;
+        background-color: rgb(143, 65, 196);
+        width: 140px;
+        box-shadow: 0 0 40px rgb(143, 65, 196);
+      }
+    
+  </style>
+</head>
+
+<body>
+  <div class="loader"></div>
+  <h1>Coming soon!</h1>
+  <a href="index.html">main page</a>
+</body>
+
+</html>

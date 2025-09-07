@@ -1,0 +1,1 @@
+document.write("I dont really like JS!");
